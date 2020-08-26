@@ -1,0 +1,144 @@
+
+  <!-- <form method='post'>
+        {% csrf_token %}
+        {{form|linebreaks }}
+        <button type = 'submit'></button>
+    </form>
+    {% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class=" {{ message.tags }} "{% endif %}>
+    {{message}}     </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Machine Learning API</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+<body>
+{% load static %}
+{% load crispy_forms_tags %}
+ <div class = "mx-2 my-5">
+
+	<div class="container-fluid">
+
+	 <div class="jumbotron ">
+
+		<div class="jumbotron text-left"> <!--<div class="container-fluid">-->
+               <h1 allign="center">DIABETES PREDICTOR </h1>
+              <p allign="center">A Non-Invasive Technique To Make Prediction </p>
+
+
+			</div>
+			<div class="container  p-3 my-3 bg-primary text-white">
+				<h1>Quick Brief On Diabetes...</h1>
+                <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high.<br>
+				   Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, <br>
+					helps glucose from food get into your cells to be used for energy.<br>
+					Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well.<br>
+					Glucose then stays in your blood and doesn’t reach your cells.</p>
+                <p>Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.</p>
+			</div>
+         <div class = "mx-2 my-5">
+			<div class="container p-3 my-3 bg-dark text-white" >
+
+				<div class="container pt-3"></div>
+
+
+					<table style="border-collapse: separate; border-spacing: 5px;">
+						<td><h3>"COMBINING</h3></td>
+						<td><h3>TECHNOLOGY AND MEDICINE</h3></td>
+						<td><h3>FOR</h3></td>
+						<td><h3>A</h3></td>
+						<td><h3> BETTER TOMORROW"</h3></h3></td>
+						<td><h5>@teamGec</h5></td>
+					</table>
+                </div>
+				</div>
+
+
+			<div class="row">
+				<div class= "col"></div>
+				<div class = "col-6 my-5">
+					<h1>Prediction Form</h1><br>
+					<form method='post'>
+						{% csrf_token %}
+						{{form|crispy}}
+						<br>
+						<button type='submit' class="btn btn-primary">Submit</button>
+					</form>
+					<br>
+				</div>
+				<div class="col">
+					<div class = "mt-5">
+						<h4>
+						{% if messages %}
+						<ul class="messages">
+					    {% for message in messages %}
+					    <div  {% if message.tags %} class=" {{ message.tags }} " {% endif %}>
+					    {{ message }} </div>
+					    {% endfor %}
+						</ul>
+						{% endif %}
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+
+ </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Algorithm Used </h3>
+      <p> Naive Bayes classifier, a probabilistic machine learning model for classification...</p>
+      <p>Gaussian Naive Bayes:
+When the predictors take up a continuous value and are not discrete, we assume that these values are sampled from a gaussian distribution....</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Developed using Python and Django</h3>
+      <p>Python 3.7.7 is the latest bugfix release of Python 3.7....</p>
+      <p>Django REST framework is a powerful and flexible toolkit for building Web APIs.<br>
+		  Some reasons you might want to use REST framework:
+		  The Web browsable API is a huge usability win for your developers.
+		  Authentication policies including packages for OAuth1a and OAuth2.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Programming Interface and Tech</h3>
+      <p>An application program interface (API) is a tools for building software applications....</p>
+      <p>Basically, an API specifies how software components should interact.<br>
+		  Additionally, APIs are used when programming graphical user interface (GUI) components..</p>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
