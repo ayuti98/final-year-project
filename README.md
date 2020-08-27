@@ -48,7 +48,7 @@ CD (Liquid Crystal Display) is a type of flat panel display which uses liquid cr
 
 
 
-3.2 SOFTWARE REQUIREMENTS
+# 3.2 SOFTWARE REQUIREMENTS
 3.2.1 DATASET – Pima Indians Diabetes Dataset
 A dataset is a collection of data. In the case of tabular data, a data set corresponds to one or more database tables, where every column of a table represents a particular variable, and each row corresponds to a given record of the data set in question.
 
@@ -126,7 +126,7 @@ In 2005, Travis Oliphant created NumPy by incorporating features of the competin
 django-crispy-forms provides you with a  tag that will let you control the rendering behavior of your Django forms in a very elegant way. Have full control without writing custom form templates. All this without breaking the standard way of doing things in Django, so it plays nice with any other form application.
 
 
-
+# 
 
 
 
