@@ -1,9 +1,9 @@
 # final-year-project
-diabetespredictor
+# Diabetespredictor
 REQUIREMENTS
 
 The hardware and software requirements are as follows:
-3.1 HARDWARE REQUIREMENTS
+# 3.1 HARDWARE REQUIREMENTS
 3.1.1 MICROCONTROLLER – ARDUINO UNO
 
 The ArduinoUno is an open-source microcontroller board based on the Microchip ATmega328P microcontroller and developed by Arduino.cc. The board is equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards (shields) and other circuits. The board has 14 Digital pins, 6 Analog pins, and programmable with the Arduino IDE (Integrated Development Environment) via a type B USB cable. It can be powered by the Universal Serial Bus (USB) cable or by an external 9-volt battery, though it accepts voltages between 7 and 20 volts. It is also similar to the Arduino Nano and Leonardo. Figure 3.1 shows Arduino.
