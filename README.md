@@ -1,4 +1,4 @@
-# final-year-project
+# Final-year-project
 # Diabetespredictor
 REQUIREMENTS
 
